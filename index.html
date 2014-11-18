@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RCAM guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <link href="bower_components/bootstrap-sass/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="bower_components/swiper/dist/idangerous.swiper.css" rel="stylesheet" type="text/css" />
+  <link href="css/master.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="swiper-container rcam-guide">
+      <div class="swiper-wrapper">
+        <!--First Slide-->
+        <div class="swiper-slide swiper-slide-visible swiper-slide-active">
+            <div class="col-xs-6">
+              <div class="center-box home">
+                <h1>Welcome to receiptcam!</h1>
+                <h2>The easy way to send expense claims to your accountant.</h2>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <img src="img/RCAM-guide-STEP1.png" alt=""/>
+            </div>
+          <div class="col-xs-12 align-center">
+            <a class="btn tour" href=""><b>Swipe</b> <br>to take a tour</a>
+          </div>
+        </div>
+
+        <!--Second Slide-->
+        <div class="swiper-slide">
+          <div class="col-xs-2">
+            <div class="tip-new-receipt">
+              <h2>You can add new expense claims from the take photo of a receipt</h2>
+            </div>
+            <div class="tip-upload-receipt">
+              <h2>Click here to upload a picture of a receipt</h2>
+            </div>
+          </div>
+          <div class="col-xs-10">
+            <img src="img/RCAM-guide-STEP2.png" alt=""/>
+          </div>
+        </div>
+
+        <!--Third Slide-->
+        <div class="swiper-slide">
+          <div class="col-xs-6">
+             <h1>This is what you will see when you add a new receipt </h1>
+            <h2>Your accountant will go through this and correct your mistakes, but you can make their day better by trying to be as specific as possible.</h2>
+            <h2 class="size-12">If you have the approval cycle function set up your boss will receive your receipt for approval            </h2>
+          </div>
+          <div class="col-xs-6">
+            <img src="img/RCAM-guide-STEP3.png" alt=""/>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="col-xs-6">
+            <h1>Your receipt is now scheduled to be sent. </h1>
+            <h2>Receipts are normally sent in once per week, to make your accountants job easier</h2>
+          </div>
+          <div class="col-xs-6">
+            <img src="img/RCAM-guide-STEP4.png" alt=""/>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="col-xs-6">
+            <img src="img/RCAM-guide-STEP4.png" alt=""/>
+          </div>
+          <div class="col-xs-6">
+            <div class="tip-archieve">
+              <img src="img/guide-archieve.png" />
+              <h2>You can find your old receipts in the archive by clicking here</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-pagination"></div>
+
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/swiper/dist/idangerous.swiper.js"></script>
+<script type="text/javascript">
+  $(function(){
+    var mySwiper = $('.swiper-container').swiper({
+      //Your options here:
+      mode:'horizontal',
+      loop: true ,
+      createPagination: true,
+      paginationClickable: true,
+      pagination: ".my-pagination"
+      //etc..
+    });
+  })
+</script>
+</html>
