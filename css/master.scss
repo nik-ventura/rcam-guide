@@ -244,5 +244,18 @@ body {
   width: 100%;
   z-index: 100;
   position: absolute;
-  top:20px;
+  top:0;
+  li {
+    display: inline-block;
+    border-radius: 20px;
+    background: #f1f1f1;
+    margin-right: 20px;
+    padding: 7px;
+    box-shadow: inset 1px 1px 2px #8e8e8e;
+    cursor: pointer;
+    &.active {
+      background:#a2db00 ;
+      box-shadow: none;
+    }
+  }
 }

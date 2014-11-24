@@ -12,9 +12,6 @@
   "moduleType": [
     "node"
   ],
-  "devDependencies": {
-    "swiper": "~2.7.0"
-  },
   "dependencies": {
     "jquery": "~2.1.1"
   }
